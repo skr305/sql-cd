@@ -1,0 +1,31 @@
+.green-import {
+   color: rgb(32, 132, 136);
+    font-weight: 800;
+}
+
+.green-simp {
+    color: rgb(32, 132, 136);
+    font-weight: 100;
+}
+
+.large-font  {
+    font-size: 30px;
+}
+
+.big-font {
+    font-size: 25px;
+}
+
+.med-font {
+    font-size: 21px;
+}
+
+.small-font {
+    font-size: 14px;
+}
+
+
+/** font simp  */
+.simp-font {
+    font-weight: 100;
+}

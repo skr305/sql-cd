@@ -1,0 +1,9 @@
+.mes-read {
+    float: right;
+    width: 1.2em;
+    height: 1.2em;
+    background-color: rgb(241, 80, 80);
+
+    border-radius: 1.2em;
+    
+}

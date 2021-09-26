@@ -1,0 +1,10 @@
+use hotel_book;
+
+
+insert into room (id, r_name, itr, pos, own_name, prc)  values (0, 'h1', 'good', 'Fuzhou', 'Zhuang', 19);
+insert into room (id, r_name, itr, pos, own_name, prc)  values (1, 'h2', 'nice', 'Xiamen', 'Tang', 29);
+insert into room (id, r_name, itr, pos, own_name, prc)  values (2, 'h3', 'excellent', 'Changsha', 'Zhuang', 89);
+
+
+insert into user (usr,pwd)  values ("skr305", "123"));
+

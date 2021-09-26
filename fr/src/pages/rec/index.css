@@ -1,0 +1,13 @@
+.rec-back-wrp {
+    background: url('../../assets/rec.jpg');
+    height: 70vh;
+    width: 99vw;
+
+    /* position: absolute;
+    top: 0;
+    z-index: -2; */
+
+    background-size: cover;
+    
+    border: solid 5px rgba(0, 0, 0, 0.555);
+}

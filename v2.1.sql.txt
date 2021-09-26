@@ -1,0 +1,33 @@
+drop database hotel_book;
+
+Create Database If Not Exists hotel_book Character Set UTF8;
+
+use hotel_book;
+
+
+
+
+create table room (
+    id varchar(30) not null,
+    hed_img text,
+    imgs text,
+    r_name varchar(30) not null,
+    itr varchar(30),
+    pos varchar(20) not null,
+    
+    own_name varchar(30) not null,
+    ins varchar(3000),
+    
+    prc int(5) not null,
+    ser varchar(100),
+    
+    primary key(id)
+);
+
+create table guest (
+    avatar text,
+    usr varchar(30) not null,
+	pwd	varchar(20) not null,
+    
+    primary key(usr)
+);

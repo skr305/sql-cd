@@ -1,0 +1,35 @@
+# 日志
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
+
+# 特殊原因忽略
+package-lock.json
+
+# 依赖
+node_modules/
+
+# TypeScript 缓存
+*.tsbuildinfo
+
+# 构建结果
+dist
+
+# 环境变量
+.env
+.env.test
+
+# 配置脱敏
+*.yml
+*.yaml
+!serverless.yml
+!.github/**/*.yml
+
+# MISC
+.vscode
+.vscode-test
+.DS_Store
+.idea

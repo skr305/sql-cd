@@ -1,0 +1,63 @@
+.pay-wrp {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    font-size: 1.6rem;
+    position: relative;
+}
+
+.pay-info {
+    margin: 7px auto;
+    font-weight: 100;
+}
+
+.pay-wrp .pay-number {
+    font-weight: 500;
+    font-size: 1.9rem;
+}
+
+
+.pay-tip {
+    line-height: 1.5em;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 100;
+
+    left: 50%;
+    
+}
+
+/* .suc-tip {
+    color: aquamarine;
+}
+
+.fal-tip {
+    color: rgb(255, 121, 121)
+} */
+
+
+.pay-ipt {
+    outline: 0;
+    min-width: 1.7em;
+    height: 1.7em;
+    text-align: center;
+    line-height: 1.4em;
+
+    border: solid 2px rgb(99, 99, 240) !important;
+    border-radius: 8px;
+
+    transition: 1s;
+
+    margin: 0 7px;
+}
+
+
+.pay-ipt:hover {
+
+    background-color: rgba(149, 165, 255, 0.472);
+}
+
+

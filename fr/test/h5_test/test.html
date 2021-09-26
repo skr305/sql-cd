@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="./assets/a.png" id="_img"/>
+    
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <input type="number">
+    <input type="file" id="f_ipt">
+    <script>
+        const day1 = moment("1993-04-05");
+        const day2 = moment("2019-05-10");
+        
+        console.log(day2.diff(day1, "days"))
+    </script>
+
+    <script>
+        const get_base64 = (img) => {
+            let reader = new FileReader();
+            reader.readAsDataURL(img);
+
+            return new Promise((resolve, reject) => {
+                reader.onload = function (suc, err) {
+                    if(err) {
+                        reject(err);
+                    }
+                    resolve(reader.result);
+                }
+            })    
+        }
+
+        document.getElementById("f_ipt").addEventListener("change", async (e) => {
+            const img = e.target.files[0];
+            const trans = await get_base64(img);
+            console.log(trans);
+        })
+
+    </script>
+</body>
+</html>

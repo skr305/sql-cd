@@ -1,0 +1,43 @@
+.ocu-wrp {
+    width: 90vw;
+    border: 1px solid black;
+    border-radius: 50px;
+
+    padding: 2em;
+}
+
+.ocu-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 5vw);
+    grid-gap: 1vw;
+
+    grid-template-rows: repeat(6, 5vw);
+
+}
+
+.situ-block {
+    border: 1px solid rgb(20, 110, 98);
+    border-radius: 2px;
+    padding: 5px;
+    background-clip: content-box;
+    transition: .6s;
+}
+
+.ocu-in {
+    background-color: greenyellow;
+    
+}
+
+.ocu-in:hover {
+    background-color: gold;
+    border: solid 2px gold;
+}
+
+.ocu-idle {
+    background-color: wheat;
+    
+}
+
+.ocu-idle:hover {
+    border: solid 2px gold;
+}

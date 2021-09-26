@@ -1,0 +1,71 @@
+html {
+  /* 定义变量 */
+  --bgColor: #ff5353;
+
+  /* rgba的四个值分别为：红(R)、绿(G)、蓝(B)、透明度(A) */
+  --whiteShadow: -15px -15px 25px rgba(255, 117, 117, .5);
+  --blackShadow: 15px 15px 25px rgba(110, 40, 40, .2);
+
+  margin: 0;
+  padding: 0;
+}
+
+
+.App {
+  text-align: center;
+
+  padding: 0;
+}
+
+* {
+  padding: 0;
+}
+
+.App>div {
+  text-align: center;
+
+  
+  padding: 0;
+
+}
+
+.App>div>div {
+
+  
+  
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

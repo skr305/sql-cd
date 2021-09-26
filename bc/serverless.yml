@@ -1,0 +1,38 @@
+# 应用配置
+org: 学生在线
+app: isdu
+stage: ${env:STAGE}
+# 组件配置
+component: koa
+name: koaServer
+
+inputs:
+  region: ap-shanghai
+  functionName: ${name}-${stage}-${app}
+  runtime: Nodejs12.16
+  entryFile: ./dist/sls.js
+  src:
+    src: ./
+    exclude:
+      - src
+      - .env
+      - .eslintignre
+      - .eslintrc.js
+      - .gitignore
+      - commitlint.config.js
+      - README.md
+      - serverless.yml
+      - tsconfig.json
+  functionConf:
+    timeout: 5
+    memorySize: 64
+    environment:
+      variables:
+        TOKEN_SIGN_KEY: ${env:TOKEN_SIGN_KEY} # 凭证签名密钥
+        AUTH_CRYPTO_KEY: ${env:AUTH_CRYPTO_KEY} # 鉴权加解密密钥
+  apigatewayConf:
+    enableCORS: true
+    protocols:
+      - http
+      - https
+    environment: release

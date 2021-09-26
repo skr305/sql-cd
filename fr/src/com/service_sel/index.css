@@ -1,0 +1,31 @@
+.in-select {
+    background-color: rgb(124, 124, 255);
+    /* background-color: wheat; */
+}
+.service-icon-wrapper {
+    /* padding: 5px; */
+    border:  solid black 2px;
+    font-size: 1.2rem;
+    width: 6em;
+    min-height: 6em;
+    border-radius: 15px;
+    line-height: 6em;
+    transition: 1s;
+    /* padding-top: 3em; */
+}
+
+.service-icon-wrapper:hover {
+    /* padding: 5px; */
+    background-color: rgba(169, 124, 243, 0.548);
+    /* padding-top: 3em; */
+}
+
+.service-wrp{
+    width: 50vw;
+
+    margin: 3em auto;
+
+    display: flex;
+    justify-content: space-around;
+}
+

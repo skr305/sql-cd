@@ -1,0 +1,59 @@
+.his-wrp {
+    display: flex;
+
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    border-radius: 19px;
+    background: #ffffff;
+    box-shadow:  20px 20px 60px #b8c0c4,
+                 -20px -20px 60px #faffff;
+
+    padding: 2em;
+
+    margin: 5em;
+}
+
+.his-entry {
+    font-size: 38px;
+    font-weight: 800;
+
+    color: rgba(108, 83, 245, 0.862);
+
+    margin:  0 auto;
+}
+
+.his-title {
+    font-size: 32px;
+    font-weight: 800;
+
+    color: rgba(108, 83, 245, 0.862);
+
+    margin:  10px 20px;
+    margin-left: 0;
+
+
+    border-bottom: 1px solid rgba(171, 161, 238, 1) ;
+
+    width: 15em;
+}
+
+
+.his-item {
+    margin: 1.4em;
+    text-align: center;
+}
+
+.his-item-ins {
+    font-size: 20px;
+    font-weight: 600;
+
+
+}
+
+.his-item-body {
+    font-size: 18px;
+    font-weight: 100;
+}
+

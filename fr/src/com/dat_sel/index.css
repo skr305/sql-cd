@@ -1,0 +1,50 @@
+.date-sel {
+    
+    width: 25rem;
+    height: 30rem;
+
+    border: solid .01rem rgb(16, 1, 34);
+
+    text-align: left;
+
+    padding: 2rem;
+
+    position: fixed;
+    right: 10px;
+    top: 15rem;
+
+    background: white;
+}
+
+.prc {
+    font-size: 2rem;
+    color: rgb(32, 132, 136);
+}
+
+.ava-book {
+    color: coral;
+    font-size: 1.4rem;
+    text-align: center;
+    font-weight: 100;
+    margin-top: 20px;
+}
+
+
+.on-book {
+    border: solid 1px rgb(252, 127, 127);
+
+    background-color: aqua;
+
+    font-size: 20px;
+
+    padding: 10px;
+
+
+    font-weight: 800;
+
+    border-radius: 5px;
+
+    color: white;
+
+    text-align: center;
+}

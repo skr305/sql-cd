@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .file {
+            visibility: hidden;
+        }
+        .update {
+            width: 3rem;
+            height: 3rem;
+            text-align: center;
+            line-height: 3rem;
+
+            border: solid 2px black;
+        }
+    </style>
+</head>
+<body>
+    
+    <div>
+        <div class="update" onclick="onUpdate(233)">
+            +
+            <input type="file" class="file hed-img" id="233" onchange="getFile">
+
+            <img src="" alt="" id="head-preview"/>
+        </div>
+
+        <div class="choose-service" id="sel-wrp">
+            <div> 洗澡 </div>
+            <div> 吹风 </div>
+            <div> 作业本 </div>
+        </div>
+        
+    </div>
+
+    <script>
+        const img_list = [];
+        const input = document.getElementById("233");
+        const headPreview = document.getElementById("head-preview");
+
+        const onUpdate = (id) => {
+            
+            input.click();
+        } 
+
+        const getFile = (e) => {
+            console.log(e);
+            const reader = new FileReader();
+            reader.readAsDataURL(e.target.files[0]);
+
+            reader.onload = (function(res, err) {
+                const result = reader.result;
+                console.log(result)
+                if(result.slice(0,15) == "data:image/jpeg" || result.slice(0,14) == "data:image/jpg" 
+                || result.slice(0,14) == "data:image/png") {
+                    headPreview.setAttribute("src", result);
+                } else {
+                    window.alert("不是图片格式!")
+                }
+            })
+        }
+
+        input.addEventListener("change", getFile);
+    </script>
+
+
+    <script>
+        const selectWrapper = document.getElementById("sel-wrp");
+        
+        selectWrapper.innerHTML
+    </script>
+
+    
+</body>
+</html>

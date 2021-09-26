@@ -1,0 +1,66 @@
+.room-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 32em;
+
+    border-radius: 20px;
+background: #ffffff;
+box-shadow:  20px 20px 60px #fafafa,
+             -20px -20px 60px #ffffff;
+
+    border: solid 1px black;
+
+    position: absolute;
+    right: 0em;
+    top: 10em;
+
+    border-radius: 15px;
+
+    min-height: 20em;
+}
+
+
+
+.room-info-img-wrp {
+    position: absolute;
+    top: -5em;
+    width: 30em;
+    border-radius: 20px;
+    overflow: hidden;
+
+    border-bottom: solid 2px black;
+    border-left: solid 1px black;
+
+    z-index: 2;
+
+    border: 0;
+
+    padding: 0 -5px;
+}
+
+
+.book-left {
+    border: solid 2px black;
+    border-radius: 10px;
+    max-width: 60vw;
+    text-align: center;
+    margin: 5em auto !important;
+}
+
+.book-btn {
+    font-size: 2rem;
+}
+
+
+.book-res-tip {
+    font-weight: 100;
+    font-size: 21px;
+
+    line-height: 1.5em;
+
+    margin-top: 3em;
+    margin: 3em auto;
+}

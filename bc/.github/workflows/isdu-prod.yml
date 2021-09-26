@@ -1,0 +1,32 @@
+name: isdu Product Deploy
+on:
+  pull_request:
+    branches:
+      - main
+jobs:
+  deploy:
+    name: deploy serverless
+    runs-on: ubuntu-latest
+    # TODO 单元测试
+    # needs: [test]
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: '12.16'
+      - name: install serverless
+        run: npm install -g serverless
+      - name: install dependency
+        run: npm install
+      - name: build
+        run: npm run build
+      - run: npm ci --production
+      - name: deploy serverless
+        run: sls deploy --debug
+        env:
+          STAGE: prod
+          SERVERLESS_PLATFORM_VENDOR: tencent
+          TOKEN_SIGN_KEY: ${{ secrets.TOKEN_SIGN_KEY }}
+          AUTH_CRYPTO_KEY: ${{ secrets.AUTH_CRYPTO_KEY }}
+          TENCENT_SECRET_ID: ${{ secrets.TENCENT_SECRET_ID }}
+          TENCENT_SECRET_KEY: ${{ secrets.TENCENT_SECRET_KEY }}

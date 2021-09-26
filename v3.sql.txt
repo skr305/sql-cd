@@ -1,0 +1,54 @@
+use `hotel_book`;
+
+create table cell (
+	r_id varchar(30) not null,
+    head varchar(30) not null,
+    begin int(5) not null default 0,
+    end int (5) not null
+);
+
+
+create table ocu (
+	r_id varchar(30) not null,
+    r_code varchar(30) not null,
+    _date varchar(30) not null,
+    
+    usr varchar(30) not null,
+    h_id varchar(30) not null
+);
+
+create table mes (
+	sender varchar(30) not null,
+    target varchar(30) not null,
+    
+    m_id varchar(30) not null,
+    
+    content varchar(1000) not null,
+    type varchar(2) not null
+);
+
+
+create table regroom (
+	id varchar(30) not null,
+    hed_img mediumblob not null,
+    imgs mediumblob not null,
+    
+    r_name varchar(200) not null,
+    itr varchar(200) not null,
+    ins varchar(200) not null,
+    
+    ser varchar(30) not null,
+    own varchar(30) not null,
+    
+    max int(3) not null,
+    
+    pos varchar(40) not null,
+    
+    reg_code varchar(30) not null,
+    vali_code varchar(30) not null
+);
+
+alter table book add column room_code varchar(30);
+alter table book add column state varchar(2) default "1";
+
+alter table room rename column `own_name` to `own`;

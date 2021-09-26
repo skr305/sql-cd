@@ -1,0 +1,16 @@
+.lined-input-body {
+    width: 12em;
+    outline: none;
+    border: 0;
+    font-weight: 100;
+
+    border-bottom: solid 1px black;
+
+    transition: .7s;
+
+    overflow: visible;
+}
+
+.lined-input-body:hover {
+    width: 14em;
+}

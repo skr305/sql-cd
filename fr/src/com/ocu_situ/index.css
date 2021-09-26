@@ -1,0 +1,28 @@
+.single-rcode-wrp {
+    font-weight: 100;
+
+    padding: 10px;
+    margin: 0 auto;
+}
+
+
+
+.ocu-total {
+    width: 20rem;
+    /* min-height: 10em; */
+}
+
+.single-ocu-wrp {
+    width: 1rem;
+    height: 1rem;
+}
+
+/** for the ocu block */
+
+.ocu-in {
+    background: red;
+}
+
+.ocu-idle {
+    background: cadetblue;
+}

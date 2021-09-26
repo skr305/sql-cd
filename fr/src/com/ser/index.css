@@ -1,0 +1,54 @@
+.ser-icn-wrp {
+    font-size: 1.3rem;
+
+    width: 4em;
+    height: 4em;
+    line-height: 4em;
+
+    text-align: center;
+    
+}
+
+
+
+.ser-txt {
+    font-weight: 100;
+
+    font-size: 15px;
+
+    /* color: rgb(4, 49, 49); */
+
+    text-align: center;
+}
+
+.ser-block {
+    
+    margin: 1em;
+    text-align: center;
+    transition: .7s;
+}
+
+.ser-block:hover {
+    color: rgb(109, 107, 243);
+    
+}
+
+/* .ser-block:hover {
+    color: #806dec;
+    width: 3em;
+    height: 3em;
+} */
+
+.ser-icns {
+    transition: 1s;
+    min-width: 7em;
+    display: flex;
+
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* .ser-icns:hover {
+    color: #806dec;
+    min-width: 9em;
+} */
